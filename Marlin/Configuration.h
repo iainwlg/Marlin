@@ -497,9 +497,9 @@
     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
-    #define DEFAULT_Kp 22.82
-    #define DEFAULT_Ki 1.62
-    #define DEFAULT_Kd 80.49
+    #define DEFAULT_Kp 32.49
+    #define DEFAULT_Ki 5.87
+    #define DEFAULT_Kd 44.93
   #endif
 #endif // PIDTEMP
 
@@ -737,7 +737,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 141.5 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 136.72 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -982,7 +982,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -43, -9, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -46, -5, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1122,8 +1122,8 @@
 #define Y_BED_SIZE 235
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS 0
-#define Y_MIN_POS 0
+#define X_MIN_POS -5
+#define Y_MIN_POS -10
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
